@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Dúvidas da Mecânica: respostas claras sobre motor, freios, elétrica, suspensão e manutenção.">
+<title>Dúvidas da Mecânica — Tire aqui!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><span class="brand-icon">🔧</span><span><b>Dúvidas da Mecânica</b><small>Tire aqui!</small></span></a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav id="nav"><a href="#inicio">Início</a><a href="#perguntas">Perguntas frequentes</a><a href="#categorias">Categorias</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">MECÂNICA SEM COMPLICAÇÃO</p>
+    <h1>Entenda seu carro.<br><span>Resolva suas dúvidas.</span></h1>
+    <p class="intro">Explicações diretas sobre manutenção e problemas automotivos para você entender o que pode estar acontecendo.</p>
+    <form id="search-form" class="searchbar"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Pesquise: bateria, óleo, freios..." aria-label="Pesquisar dúvidas"><button type="submit">Pesquisar <span>→</span></button></form>
+    <p class="hint">Pesquise por uma palavra ou escolha uma categoria abaixo.</p>
+  </div>
+</section>
+
+<section class="section categories-section" id="categorias">
+  <div class="section-heading"><div><p class="eyebrow">ENCONTRE MAIS RÁPIDO</p><h2>Categorias</h2><p class="subheading">Escolha um assunto para ver as dúvidas relacionadas.</p></div><button class="text-button" id="show-all">Ver todas →</button></div>
+  <div class="category-grid">
+    <button class="category" data-category="Motor"><span class="cat-icon red">⚙</span><b>Motor</b><small>Consumo, ruídos e desempenho</small></button>
+    <button class="category" data-category="Freios"><span class="cat-icon blue">◉</span><b>Freios</b><small>Segurança e sinais de desgaste</small></button>
+    <button class="category" data-category="Elétrica"><span class="cat-icon yellow">ϟ</span><b>Elétrica</b><small>Bateria, luzes e partida</small></button>
+    <button class="category" data-category="Suspensão"><span class="cat-icon green">⌁</span><b>Suspensão</b><small>Estabilidade e barulhos</small></button>
+    <button class="category" data-category="Manutenção"><span class="cat-icon purple">🔧</span><b>Manutenção</b><small>Cuidados preventivos</small></button>
+  </div>
+</section>
+
+<section class="faq-section" id="perguntas">
+  <div class="section faq-inner">
+    <div class="section-heading"><div><p class="eyebrow">RESPOSTAS DIRETAS</p><h2>Perguntas frequentes</h2><p class="subheading">Conteúdo simples para ajudar você a entender melhor seu veículo.</p></div><button class="text-button" id="clear-filters">Limpar filtros ↗</button></div>
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <div class="faq-grid" id="faq-grid">
+      <article class="faq-card" data-category="Motor" data-search="carro consumindo combustível gasolina consumo motor"><button class="faq-question" aria-expanded="false"><span>Por que meu carro está consumindo muito combustível?</span><b>＋</b></button><div class="faq-answer"><p>O consumo pode aumentar por fatores como pneus com pressão incorreta, manutenção atrasada, trânsito intenso ou falhas no motor. Compare o consumo em condições semelhantes e consulte uma oficina se a mudança for repentina.</p></div><span class="tag tag-red">Motor</span></article>
+      <article class="faq-card" data-category="Manutenção" data-search="óleo função trocar lubrificante motor"><button class="faq-question" aria-expanded="false"><span>Qual é a função do óleo do motor?</span><b>＋</b></button><div class="faq-answer"><p>O óleo lubrifica componentes internos, reduz o atrito e ajuda a controlar resíduos e temperatura. Use o tipo indicado no manual e respeite os intervalos recomendados pelo fabricante.</p></div><span class="tag tag-purple">Manutenção</span></article>
+      <article class="faq-card" data-category="Elétrica" data-search="bateria carro não liga partida luzes elétrica"><button class="faq-question" aria-expanded="false"><span>Como identificar possíveis problemas na bateria?</span><b>＋</b></button><div class="faq-answer"><p>Partida lenta, luzes fracas ou dificuldade para ligar podem indicar bateria descarregada ou outra falha elétrica. Um teste adequado ajuda a descobrir a causa; evite mexer em terminais se não souber como fazer com segurança.</p></div><span class="tag tag-yellow">Elétrica</span></article>
+      <article class="faq-card" data-category="Freios" data-search="freio barulho ruído pastilha pedal segurança"><button class="faq-question" aria-expanded="false"><span>Por que o freio faz barulho?</span><b>＋</b></button><div class="faq-answer"><p>O ruído pode estar relacionado a desgaste, sujeira ou outras condições do sistema. Se o pedal mudar, houver vibração forte, luz de alerta ou perda de eficiência, pare em local seguro e procure assistência; não continue dirigindo com freios comprometidos.</p></div><span class="tag tag-blue">Freios</span></article>
+      <article class="faq-card" data-category="Suspensão" data-search="suspensão barulho buraco amortecedor estabilidade"><button class="faq-question" aria-expanded="false"><span>O que pode causar barulho na suspensão?</span><b>＋</b></button><div class="faq-answer"><p>Peças desgastadas, componentes soltos ou problemas em outras partes do veículo podem produzir ruídos. Se o carro ficar instável ou puxar para um lado, solicite uma avaliação profissional.</p></div><span class="tag tag-green">Suspensão</span></article>
+      <article class="faq-card" data-category="Manutenção" data-search="pneu calibrar pressão manutenção rodagem"><button class="faq-question" aria-expanded="false"><span>Quando devo calibrar os pneus?</span><b>＋</b></button><div class="faq-answer"><p>Confira a pressão indicada pelo fabricante, normalmente no manual ou em uma etiqueta do veículo. Meça com os pneus frios e siga a recomendação específica para seu carro e carga.</p></div><span class="tag tag-purple">Manutenção</span></article>
+    </div>
+    <div id="no-results" class="no-results" hidden><b>Nenhuma dúvida encontrada.</b><p>Tente outra palavra ou escolha uma categoria diferente.</p><button class="primary-button" id="reset-search">Mostrar todas as perguntas</button></div>
+  </div>
+</section>
+
+<section class="quick-info" id="sobre"><div><span>⚡</span><b>Respostas objetivas</b><small>Encontre informação sem complicação.</small></div><div><span>✓</span><b>Conteúdo educativo</b><small>Orientações gerais e claras.</small></div><div><span>🚘</span><b>Mais cuidado com seu carro</b><small>Saiba quando buscar um profissional.</small></div></section>
+
+<section class="contact-section section" id="contato"><div><p class="eyebrow">FALE COM A GENTE</p><h2>Não encontrou sua dúvida?</h2><p class="subheading">Envie uma sugestão para incluirmos novas perguntas no site.</p><p class="safety-note">O site oferece informação geral e não substitui uma inspeção feita por mecânico qualificado.</p></div>
+<form id="contact-form" class="contact-form"><label for="visitor-name">Seu nome</label><input id="visitor-name" required maxlength="80" placeholder="Seu nome"><label for="visitor-email">Seu e-mail</label><input id="visitor-email" required type="email" maxlength="150" placeholder="voce@exemplo.com"><label for="visitor-question">Sua dúvida ou sugestão</label><textarea id="visitor-question" required maxlength="1500" rows="4" placeholder="Escreva sua dúvida..."></textarea><button type="submit" class="primary-button">Preparar e-mail →</button><p class="form-note">Esta versão abre o aplicativo de e-mail. Para salvar perguntas no site, será necessário conectar um banco de dados.</p><p id="form-status" aria-live="polite"></p></form></section>
+</main>
+<footer><a class="brand" href="#inicio"><span class="brand-icon">🔧</span><span><b>Dúvidas da Mecânica</b><small>Tire aqui!</small></span></a><p>Informação clara para cuidar melhor do seu carro.</p><small>© <span id="year"></span> Dúvidas da Mecânica</small></footer>
+<script src="script.js"></script>
+</body></html>
