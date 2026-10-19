@@ -1,0 +1,32 @@
+DÚVIDAS DA MECÂNICA — PACOTE PRONTO PARA PUBLICAR
+=================================================
+
+O QUE ESTÁ INCLUÍDO
+- index.html: página principal.
+- style.css: aparência responsiva para computador e celular.
+- script.js: pesquisa, filtros e interação das perguntas frequentes.
+- .nojekyll: arquivo auxiliar para publicação pelo GitHub Pages.
+
+TESTAR NO COMPUTADOR
+1. Extraia o ZIP.
+2. Abra index.html no navegador.
+3. A pesquisa e as perguntas frequentes funcionam localmente.
+4. É necessária internet para carregar as fotografias externas.
+
+PUBLICAR PELO GITHUB PAGES
+1. Entre em https://github.com/ e abra seu repositório (ou crie um chamado duvidas-da-mecanica).
+2. Na página do repositório, clique em Add file > Upload files.
+3. Arraste TODOS os arquivos deste pacote, incluindo index.html, style.css, script.js e .nojekyll.
+   Importante: envie os arquivos diretamente para a raiz do repositório, não uma pasta contendo os arquivos.
+4. Clique em Commit changes.
+5. Abra Settings > Pages.
+6. Em Build and deployment, escolha Deploy from a branch.
+7. Selecione a branch main e a pasta /(root), depois clique em Save.
+8. Aguarde o GitHub Pages publicar e abra o endereço mostrado nessa tela. Pode levar alguns minutos.
+
+LIMITAÇÕES IMPORTANTES
+- Este pacote está preparado para publicação, mas não foi publicado na sua conta: não tenho acesso à sua conta GitHub para executar essas etapas por você.
+- A pesquisa filtra o conteúdo que já está no site; ela não consulta um banco de dados externo.
+- O formulário de contato prepara uma mensagem no aplicativo de e-mail do visitante. Ele NÃO salva perguntas nem publica respostas automaticamente.
+- Para visitantes enviarem perguntas que fiquem armazenadas e para você publicar respostas no site, é necessário configurar um serviço de backend/banco de dados e proteger o painel de administração. Isso exige credenciais e configuração na sua própria conta; não estão incluídas neste pacote.
+- As informações mecânicas são educativas e não substituem a inspeção de um profissional qualificado.
